@@ -2,3 +2,51 @@
 2026-01-05 19:20:44,363 - PREPROCESSING - INFO - Cleaning data (Placeholder)...
 2026-01-05 19:20:44,363 - PREPROCESSING - INFO - Handling missing values (Placeholder)...
 2026-01-05 19:20:44,363 - PREPROCESSING - INFO - Data Preprocessing completed.
+2026-01-05 19:58:31,125 - PREPROCESSING - INFO - Starting Data Preprocessing...
+2026-01-05 19:58:31,526 - PREPROCESSING - INFO - Clipping study_hours at 99th percentile: 7.91
+2026-01-05 19:58:31,535 - PREPROCESSING - INFO - Clipping class_attendance at 99th percentile: 99.4
+2026-01-05 19:58:31,544 - PREPROCESSING - INFO - Clipping sleep_hours at 99th percentile: 9.9
+2026-01-05 19:58:31,546 - PREPROCESSING - INFO - Applying log transformation to sleep_hours (using log1p)
+2026-01-05 19:58:33,313 - PREPROCESSING - INFO - Cleaned data saved to outputs/artifacts/train_cleaned.csv and outputs/artifacts/test_cleaned.csv
+2026-01-05 19:58:33,314 - PREPROCESSING - INFO - Data Preprocessing completed.
+2026-01-05 19:59:00,058 - PREPROCESSING - INFO - Starting Data Preprocessing...
+2026-01-05 19:59:00,449 - PREPROCESSING - INFO - Clipping study_hours at 99th percentile: 7.91
+2026-01-05 19:59:00,457 - PREPROCESSING - INFO - Clipping class_attendance at 99th percentile: 99.4
+2026-01-05 19:59:00,464 - PREPROCESSING - INFO - Clipping sleep_hours at 99th percentile: 9.9
+2026-01-05 19:59:00,467 - PREPROCESSING - INFO - Applying log transformation to sleep_hours (using log1p)
+2026-01-05 19:59:02,236 - PREPROCESSING - INFO - Cleaned data saved to outputs/artifacts/train_cleaned.csv and outputs/artifacts/test_cleaned.csv
+2026-01-05 19:59:02,236 - PREPROCESSING - INFO - Data Preprocessing completed.
+2026-01-05 20:00:35,246 - PREPROCESSING - INFO - Starting Data Preprocessing...
+2026-01-05 20:00:35,648 - PREPROCESSING - INFO - Clipping study_hours at 99th percentile: 7.91
+2026-01-05 20:00:35,657 - PREPROCESSING - INFO - Clipping class_attendance at 99th percentile: 99.4
+2026-01-05 20:00:35,664 - PREPROCESSING - INFO - Clipping sleep_hours at 99th percentile: 9.9
+2026-01-05 20:00:35,667 - PREPROCESSING - INFO - Applying log transformation to sleep_hours (using log1p)
+2026-01-05 20:00:35,672 - PREPROCESSING - INFO - Dropping 'id' column from train and test sets
+2026-01-05 20:00:37,402 - PREPROCESSING - INFO - Cleaned data saved to outputs/artifacts/train_cleaned.csv and outputs/artifacts/test_cleaned.csv
+2026-01-05 20:00:37,402 - PREPROCESSING - INFO - Data Preprocessing completed.
+2026-01-05 20:07:09,964 - PREPROCESSING - INFO - Starting Data Preprocessing...
+2026-01-05 20:07:10,363 - PREPROCESSING - INFO - Applying log transformation to: ['study_hours', 'class_attendance', 'sleep_hours'] (using log1p)
+2026-01-05 20:07:10,378 - PREPROCESSING - INFO - Dropping 'id' column from train and test sets
+2026-01-05 20:07:12,555 - PREPROCESSING - INFO - Cleaned data saved to outputs/artifacts/train_cleaned.csv and outputs/artifacts/test_cleaned.csv
+2026-01-05 20:07:12,555 - PREPROCESSING - INFO - Data Preprocessing completed.
+2026-01-05 20:09:35,175 - PREPROCESSING - INFO - Starting Data Preprocessing...
+2026-01-05 20:09:35,573 - PREPROCESSING - INFO - Applying log transformation to: ['study_hours', 'class_attendance', 'sleep_hours'] (using log1p)
+2026-01-05 20:09:35,587 - PREPROCESSING - INFO - Dropping 'id' column from train and test sets
+2026-01-05 20:09:37,789 - PREPROCESSING - INFO - Cleaned data saved to outputs/artifacts/train_cleaned.csv and outputs/artifacts/test_cleaned.csv
+2026-01-05 20:09:37,789 - PREPROCESSING - INFO - Data Preprocessing completed.
+2026-01-05 20:10:45,694 - PREPROCESSING - INFO - Starting Data Preprocessing...
+2026-01-05 20:10:46,083 - PREPROCESSING - INFO - Applying log transformation to: ['study_hours', 'class_attendance', 'sleep_hours'] (using log1p)
+2026-01-05 20:10:46,097 - PREPROCESSING - INFO - Dropping 'id' column from train and test sets
+2026-01-05 20:10:48,266 - PREPROCESSING - INFO - Cleaned data saved to outputs/artifacts/train_cleaned.csv and outputs/artifacts/test_cleaned.csv
+2026-01-05 20:10:48,266 - PREPROCESSING - INFO - Data Preprocessing completed.
+2026-01-05 20:19:00,208 - PREPROCESSING - INFO - Starting Data Preprocessing...
+2026-01-05 20:19:00,611 - PREPROCESSING - INFO - Applying log transformation to: ['study_hours', 'class_attendance'] (using log1p)
+2026-01-05 20:19:00,621 - PREPROCESSING - INFO - Applying binning to sleep_hours (5 bins)
+2026-01-05 20:19:00,647 - PREPROCESSING - INFO - Dropping 'id' column from train and test sets
+2026-01-05 20:19:02,606 - PREPROCESSING - INFO - Cleaned data saved to outputs/artifacts/train_cleaned.csv and outputs/artifacts/test_cleaned.csv
+2026-01-05 20:19:02,606 - PREPROCESSING - INFO - Data Preprocessing completed.
+2026-01-05 20:20:13,312 - PREPROCESSING - INFO - Starting Data Preprocessing...
+2026-01-05 20:20:13,705 - PREPROCESSING - INFO - Keeping study_hours, class_attendance, and sleep_hours as raw numerical values.
+2026-01-05 20:20:13,705 - PREPROCESSING - INFO - Dropping 'id' column from train and test sets
+2026-01-05 20:20:15,220 - PREPROCESSING - INFO - Cleaned data saved to outputs/artifacts/train_cleaned.csv and outputs/artifacts/test_cleaned.csv
+2026-01-05 20:20:15,220 - PREPROCESSING - INFO - Data Preprocessing completed.

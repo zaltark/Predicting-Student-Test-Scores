@@ -7,7 +7,10 @@ data:
 # Output Paths
 outputs:
   visualizations: "outputs/visualizations"
-  processed_data: "outputs/artifacts/processed_data.csv"
+  processed_train: "outputs/artifacts/processed_train.csv"
+  processed_test: "outputs/artifacts/processed_test.csv"
+  train_cleaned: "outputs/artifacts/train_cleaned.csv"
+  test_cleaned: "outputs/artifacts/test_cleaned.csv"
   model_path: "outputs/artifacts/model.pkl"
   submission_path: "outputs/submissions/submission.csv"
   logs: "outputs/logs"
