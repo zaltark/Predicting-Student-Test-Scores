@@ -52,3 +52,9 @@
 2026-01-05 20:20:13,311 - EXPLORATION - INFO - Generating visualizations (Placeholder)...
 2026-01-05 20:20:13,311 - EXPLORATION - INFO - Saving plots to outputs/visualizations
 2026-01-05 20:20:13,311 - EXPLORATION - INFO - Data Exploration completed.
+2026-01-05 22:04:35,828 - EXPLORATION - INFO - Starting Data Exploration...
+2026-01-05 22:04:35,828 - EXPLORATION - INFO - Loading train data from Data/train.csv
+2026-01-05 22:04:35,828 - EXPLORATION - INFO - Loading test data from Data/test.csv
+2026-01-05 22:04:35,828 - EXPLORATION - INFO - Generating visualizations (Placeholder)...
+2026-01-05 22:04:35,828 - EXPLORATION - INFO - Saving plots to outputs/visualizations
+2026-01-05 22:04:35,828 - EXPLORATION - INFO - Data Exploration completed.

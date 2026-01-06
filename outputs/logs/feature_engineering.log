@@ -40,3 +40,20 @@
 2026-01-05 20:36:15,275 - FEATURE_ENGINEERING - INFO - Applying Target Encoding to categorical columns: ['gender', 'course', 'internet_access', 'sleep_quality', 'study_method', 'facility_rating', 'exam_difficulty']
 2026-01-05 20:36:15,768 - FEATURE_ENGINEERING - INFO - Saving processed data to outputs/artifacts/processed_train.csv and outputs/artifacts/processed_test.csv
 2026-01-05 20:36:19,439 - FEATURE_ENGINEERING - INFO - Feature Engineering completed.
+2026-01-05 22:01:22,465 - FEATURE_ENGINEERING - INFO - Starting Feature Engineering...
+2026-01-05 22:01:22,858 - FEATURE_ENGINEERING - INFO - Creating Segment Features (Binning + Crossing)...
+2026-01-05 22:01:23,136 - FEATURE_ENGINEERING - INFO - Applying Target Encoding to categorical columns: ['gender', 'course', 'internet_access', 'sleep_quality', 'study_method', 'facility_rating', 'exam_difficulty', 'sleep_segment', 'attendance_segment']
+2026-01-05 22:01:23,836 - FEATURE_ENGINEERING - INFO - Saving processed data to outputs/artifacts/processed_train.csv and outputs/artifacts/processed_test.csv
+2026-01-05 22:01:28,283 - FEATURE_ENGINEERING - INFO - Feature Engineering completed.
+2026-01-05 22:04:08,436 - FEATURE_ENGINEERING - INFO - Starting Feature Engineering...
+2026-01-05 22:04:08,829 - FEATURE_ENGINEERING - INFO - Applying Target Encoding to categorical columns: ['gender', 'course', 'internet_access', 'sleep_quality', 'study_method', 'facility_rating', 'exam_difficulty']
+2026-01-05 22:04:09,274 - FEATURE_ENGINEERING - INFO - Saving processed data to outputs/artifacts/processed_train.csv and outputs/artifacts/processed_test.csv
+2026-01-05 22:04:12,991 - FEATURE_ENGINEERING - INFO - Feature Engineering completed.
+2026-01-05 22:04:37,722 - FEATURE_ENGINEERING - INFO - Starting Feature Engineering...
+2026-01-05 22:04:38,113 - FEATURE_ENGINEERING - INFO - Applying Target Encoding to categorical columns: ['gender', 'course', 'internet_access', 'sleep_quality', 'study_method', 'facility_rating', 'exam_difficulty']
+2026-01-05 22:04:38,566 - FEATURE_ENGINEERING - INFO - Saving processed data to outputs/artifacts/processed_train.csv and outputs/artifacts/processed_test.csv
+2026-01-05 22:04:42,303 - FEATURE_ENGINEERING - INFO - Feature Engineering completed.
+2026-01-05 23:04:05,735 - FEATURE_ENGINEERING - INFO - Starting Feature Engineering...
+2026-01-05 23:04:06,148 - FEATURE_ENGINEERING - INFO - Applying Target Encoding to categorical columns: ['gender', 'course', 'internet_access', 'sleep_quality', 'study_method', 'facility_rating', 'exam_difficulty']
+2026-01-05 23:04:06,613 - FEATURE_ENGINEERING - INFO - Saving processed data to outputs/artifacts/processed_train.csv and outputs/artifacts/processed_test.csv
+2026-01-05 23:04:10,529 - FEATURE_ENGINEERING - INFO - Feature Engineering completed.

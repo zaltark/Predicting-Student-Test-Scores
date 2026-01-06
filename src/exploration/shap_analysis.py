@@ -28,6 +28,16 @@ def run_shap_analysis():
     logger.info(f"Loading processed data from {train_path}")
     train_df = pd.read_csv(train_path)
     
+    # Selected Features (must match training)
+    selected_features = [
+        'sleep_hours', 
+        'facility_rating_te', 
+        'study_method_te',    
+        'sleep_quality_te',   
+        'class_attendance', 
+        'study_hours'
+    ]
+    
     # Sample data for SHAP (calculating on full dataset is too slow)
     sample_size = 5000
     if len(train_df) > sample_size:
@@ -36,7 +46,7 @@ def run_shap_analysis():
     else:
         shap_df = train_df
         
-    X_shap = shap_df.drop(columns=[target_col])
+    X_shap = shap_df[selected_features]
     y_shap = shap_df[target_col]
     
     # Explain predictions using SHAP

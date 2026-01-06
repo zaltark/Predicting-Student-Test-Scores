@@ -31,7 +31,28 @@ def compare_models():
     logger.info(f"Loading processed data from {train_path}")
     train_df = pd.read_csv(train_path)
     
-    X = train_df.drop(columns=[target_col])
+    # Feature Selection: Best known setup
+    selected_features = [
+        'sleep_hours', 
+        'facility_rating_te', 
+        'study_method_te',    
+        'sleep_quality_te',   
+        'class_attendance', 
+        'study_hours'
+    ]
+    
+    logger.info(f"Using best known feature set: {selected_features}")
+    
+    # Check availability
+    available_cols = train_df.columns.tolist()
+    final_features = []
+    for f in selected_features:
+        if f in available_cols:
+            final_features.append(f)
+        else:
+            logger.warning(f"Feature {f} not found. Skipping.")
+            
+    X = train_df[final_features]
     y = train_df[target_col]
     
     # Define models

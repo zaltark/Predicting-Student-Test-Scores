@@ -43,20 +43,28 @@ This project is organized into a modular pipeline:
 
 ## Results
 
-**Best Single Model:** XGBoost
-**Best RMSE:** ~8.7695
+**Champion Model:** Stacking Ensemble (Tuned XGBoost + LightGBM + Linear)
+**Best RMSE:** ~8.7333
+
+### Key Configuration
+*   **Ensemble Strategy:** Level 1 (XGB, LGBM, CatBoost, RF, Linear) -> Level 2 (Ridge Regression).
+*   **Hyperparameter Tuning:** XGBoost and LightGBM optimized via Optuna (100 rounds early stopping).
+*   **Selected Features:** `sleep_hours`, `facility_rating_te`, `study_method_te`, `sleep_quality_te`, `class_attendance`, `study_hours`.
 
 ### Model Comparison (5-Fold CV)
-1.  **XGBoost:** 8.7695
-2.  **LightGBM:** 8.7768
-3.  **CatBoost:** 8.8040
-4.  **Linear/Ridge Regression:** 8.9105
-5.  **Random Forest:** 9.0971
+1.  **Stacking Ensemble (Tuned):** 8.7333
+2.  **XGBoost (Tuned):** 8.7465
+3.  **LightGBM (Tuned):** 8.7478
+4.  **XGBoost (Baseline):** 8.7685
+5.  **LightGBM (Baseline):** 8.7746
+6.  **CatBoost:** 8.8041
+7.  **Linear/Ridge Regression:** 8.9117
 
 ### Key Insights
-*   **Target Encoding:** Significantly improved the performance of Linear Regression, bringing it much closer to tree-based models (RMSE improved from ~9.96 to ~8.91).
-*   **Feature Correlations:** Residual analysis shows extremely high correlation (>0.98) between XGBoost, LightGBM, and CatBoost, suggesting they are learning very similar patterns.
-*   **Linear Trends:** SHAP analysis revealed strong linear relationships for features like `study_hours` and `attendance`, which explains the strong performance of linear models after target encoding.
+*   **Ensemble Power:** Stacking diverse models (Tree-based + Linear) yields the best performance by allowing the meta-model to correct individual biases.
+*   **Tuning Matters:** Optuna tuning improved individual model scores by ~0.02-0.03 RMSE, which directly translated to a better ensemble.
+*   **Feature Selection Wins:** Reducing the model to the top 6 most impactful features improved performance by removing noise.
+*   **Target Encoding:** Significantly improved the performance of Linear Regression, making it a valuable contributor to the stack.
 
 ## Tested Theories & Experiments
 
@@ -67,13 +75,15 @@ This project is organized into a modular pipeline:
 | **Binning** | Binned `sleep_hours` into 5 categories. | RMSE degraded slightly (8.7761). | Reverted. |
 | **Interaction Features** | Created simple interactions (e.g., `study_hours * method`). | RMSE degraded slightly (8.7614). | Reverted. |
 | **Weighted Training** | Biased LightGBM (low scores) & XGBoost (high scores). | RMSE degraded significantly (~9.12). | Reverted. |
+| **Stacking** | Ensembled multiple models with a Ridge meta-learner. | **Best Result (8.7333)**. | **Adopted.** |
 
 ## Outputs & Artifacts
 
-- **Submission File:** `outputs/submissions/submission.csv`
+- **Submission File:** `outputs/submissions/submission_stacking.csv`
 - **EDA Reports:** `outputs/visualizations/eda_report.html` (Raw), `eda_report_processed.html` (Processed)
 - **SHAP Analysis:** `outputs/visualizations/shap_summary_beeswarm.png`, `shap_feature_importance.png`
 - **Residual Analysis:** `outputs/visualizations/residual_correlation_matrix.png`, `residual_plot.png`
+- **Tuned Params:** `best_params.yaml`
 
 ## Usage
 

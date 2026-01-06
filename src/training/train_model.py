@@ -1,10 +1,3 @@
-import sys
-import os
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
-
-from src.utils import load_config, setup_logger
-
 import pandas as pd
 import numpy as np
 import xgboost as xgb
@@ -33,9 +26,19 @@ def train_model():
     train_df = pd.read_csv(train_path)
     test_df = pd.read_csv(test_path)
     
-    X = train_df.drop(columns=[target_col])
+    # Feature Selection: Best known setup
+    selected_features = [
+        'sleep_hours', 
+        'facility_rating_te', 
+        'study_method_te',    
+        'sleep_quality_te',   
+        'class_attendance', 
+        'study_hours'
+    ]
+    
+    X = train_df[selected_features]
     y = train_df[target_col]
-    X_test = test_df # ID column was already removed in preprocessing
+    X_test = test_df[selected_features]
     
     # K-Fold Cross Validation
     n_splits = 5

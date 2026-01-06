@@ -1,0 +1,7 @@
+2026-01-05 22:11:32,855 - TUNING - INFO - Tuning XGBoost...
+2026-01-05 22:27:38,768 - TUNING - INFO - Best XGB Params: {'learning_rate': 0.053939076596510226, 'max_depth': 5, 'subsample': 0.9562354389688843, 'colsample_bytree': 0.9265224535978751, 'reg_alpha': 2.5341184255853644e-07, 'reg_lambda': 8.695770046722775e-07, 'min_child_weight': 10}
+2026-01-05 22:27:38,768 - TUNING - INFO - Best XGB RMSE: 8.746480729199206
+2026-01-05 22:27:38,769 - TUNING - INFO - Tuning LightGBM...
+2026-01-05 22:39:01,116 - TUNING - INFO - Best LGBM Params: {'learning_rate': 0.0674879984975894, 'num_leaves': 42, 'max_depth': 5, 'subsample': 0.5017400909129055, 'colsample_bytree': 0.5057717312440626, 'reg_alpha': 1.8742450132661552e-06, 'reg_lambda': 1.2472403484004457e-07, 'min_child_samples': 17}
+2026-01-05 22:39:01,116 - TUNING - INFO - Best LGBM RMSE: 8.747806903926087
+2026-01-05 22:39:01,118 - TUNING - INFO - Best parameters saved to best_params.yaml

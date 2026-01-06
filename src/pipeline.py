@@ -4,10 +4,9 @@ import os
 # Ensure src is in path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from src.exploration.explore import explore_data
 from src.processing.preprocess import preprocess_data
 from src.features.engineer_features import engineer_features
-from src.training.train_model import train_model
+from src.training.train_stacking import train_stacking
 from src.utils import load_config, setup_logger
 
 def run_pipeline():
@@ -19,10 +18,13 @@ def run_pipeline():
     logger.info("=========================================")
     
     try:
-        explore_data()
+        # Data Processing & Feature Engineering
         preprocess_data()
         engineer_features()
-        train_model()
+        
+        # Model Training (Stacking Ensemble)
+        train_stacking()
+        
         logger.info("=========================================")
         logger.info("   PIPELINE COMPLETED SUCCESSFULLY")
         logger.info("=========================================")

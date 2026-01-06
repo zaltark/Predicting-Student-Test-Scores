@@ -172,3 +172,133 @@ CatBoost                    0.991988          0.991988          0.991580  ...  0
 
 [7 rows x 7 columns]
 2026-01-05 20:54:24,300 - MODEL_COMPARISON - INFO - Residual correlation matrix saved to outputs/visualizations\residual_correlation_matrix.png
+2026-01-05 21:55:11,344 - MODEL_COMPARISON - INFO - Starting Model Comparison...
+2026-01-05 21:55:11,344 - MODEL_COMPARISON - INFO - Loading processed data from outputs/artifacts/processed_train.csv
+2026-01-05 21:55:11,672 - MODEL_COMPARISON - INFO - Experiment: Using subset of features: ['sleep_hours', 'facility_rating_te', 'study_method_te', 'sleep_quality_te', 'class_attendance', 'study_hours']
+2026-01-05 21:55:11,676 - MODEL_COMPARISON - INFO - Evaluating Linear_Regression...
+2026-01-05 21:55:11,933 - MODEL_COMPARISON - INFO - Linear_Regression Average RMSE: 8.9117
+2026-01-05 21:55:11,933 - MODEL_COMPARISON - INFO - Evaluating Ridge_Regression...
+2026-01-05 21:55:12,137 - MODEL_COMPARISON - INFO - Ridge_Regression Average RMSE: 8.9117
+2026-01-05 21:55:12,137 - MODEL_COMPARISON - INFO - Evaluating Lasso_Regression...
+2026-01-05 21:55:12,359 - MODEL_COMPARISON - INFO - Lasso_Regression Average RMSE: 8.9147
+2026-01-05 21:55:12,359 - MODEL_COMPARISON - INFO - Evaluating Random_Forest...
+2026-01-05 21:55:31,295 - MODEL_COMPARISON - INFO - Random_Forest Average RMSE: 9.0962
+2026-01-05 21:55:31,295 - MODEL_COMPARISON - INFO - Evaluating XGBoost...
+2026-01-05 21:55:36,060 - MODEL_COMPARISON - INFO - XGBoost Average RMSE: 8.7685
+2026-01-05 21:55:36,060 - MODEL_COMPARISON - INFO - Evaluating LightGBM...
+2026-01-05 21:55:40,695 - MODEL_COMPARISON - INFO - LightGBM Average RMSE: 8.7746
+2026-01-05 21:55:40,696 - MODEL_COMPARISON - INFO - Evaluating CatBoost...
+2026-01-05 21:56:06,685 - MODEL_COMPARISON - INFO - CatBoost Average RMSE: 8.8041
+2026-01-05 21:56:06,685 - MODEL_COMPARISON - INFO - ========================================
+2026-01-05 21:56:06,686 - MODEL_COMPARISON - INFO -    MODEL COMPARISON RESULTS
+2026-01-05 21:56:06,686 - MODEL_COMPARISON - INFO - ========================================
+2026-01-05 21:56:06,686 - MODEL_COMPARISON - INFO - XGBoost: 8.7685
+2026-01-05 21:56:06,686 - MODEL_COMPARISON - INFO - LightGBM: 8.7746
+2026-01-05 21:56:06,686 - MODEL_COMPARISON - INFO - CatBoost: 8.8041
+2026-01-05 21:56:06,686 - MODEL_COMPARISON - INFO - Ridge_Regression: 8.9117
+2026-01-05 21:56:06,686 - MODEL_COMPARISON - INFO - Linear_Regression: 8.9117
+2026-01-05 21:56:06,686 - MODEL_COMPARISON - INFO - Lasso_Regression: 8.9147
+2026-01-05 21:56:06,686 - MODEL_COMPARISON - INFO - Random_Forest: 9.0962
+2026-01-05 21:56:06,686 - MODEL_COMPARISON - INFO - Best Model: XGBoost
+2026-01-05 21:56:06,686 - MODEL_COMPARISON - INFO - ========================================
+2026-01-05 21:56:06,686 - MODEL_COMPARISON - INFO -    RESIDUAL CORRELATION ANALYSIS
+2026-01-05 21:56:06,686 - MODEL_COMPARISON - INFO - ========================================
+2026-01-05 21:56:06,748 - MODEL_COMPARISON - INFO - 
+                   Linear_Regression  Ridge_Regression  Lasso_Regression  ...   XGBoost  LightGBM  CatBoost
+Linear_Regression           1.000000          1.000000          0.999666  ...  0.983923  0.985885  0.991871
+Ridge_Regression            1.000000          1.000000          0.999666  ...  0.983923  0.985885  0.991871
+Lasso_Regression            0.999666          0.999666          1.000000  ...  0.983626  0.985599  0.991544
+Random_Forest               0.955189          0.955189          0.957351  ...  0.964503  0.965082  0.963594
+XGBoost                     0.983923          0.983923          0.983626  ...  1.000000  0.996030  0.994128
+LightGBM                    0.985885          0.985885          0.985599  ...  0.996030  1.000000  0.995616
+CatBoost                    0.991871          0.991871          0.991544  ...  0.994128  0.995616  1.000000
+
+[7 rows x 7 columns]
+2026-01-05 21:56:06,943 - MODEL_COMPARISON - INFO - Residual correlation matrix saved to outputs/visualizations\residual_correlation_matrix.png
+2026-01-05 21:57:57,306 - MODEL_COMPARISON - INFO - Starting Model Comparison...
+2026-01-05 21:57:57,306 - MODEL_COMPARISON - INFO - Loading processed data from outputs/artifacts/processed_train.csv
+2026-01-05 21:57:57,630 - MODEL_COMPARISON - INFO - Experiment: Creating interactions and removing originals...
+2026-01-05 21:57:57,633 - MODEL_COMPARISON - INFO - Using features: ['sleep_interaction', 'attendance_interaction', 'study_hours', 'study_method_te']
+2026-01-05 21:57:57,636 - MODEL_COMPARISON - INFO - Evaluating Linear_Regression...
+2026-01-05 21:57:57,856 - MODEL_COMPARISON - INFO - Linear_Regression Average RMSE: 9.5090
+2026-01-05 21:57:57,856 - MODEL_COMPARISON - INFO - Evaluating Ridge_Regression...
+2026-01-05 21:57:58,040 - MODEL_COMPARISON - INFO - Ridge_Regression Average RMSE: 9.5090
+2026-01-05 21:57:58,040 - MODEL_COMPARISON - INFO - Evaluating Lasso_Regression...
+2026-01-05 21:57:58,239 - MODEL_COMPARISON - INFO - Lasso_Regression Average RMSE: 9.5109
+2026-01-05 21:57:58,239 - MODEL_COMPARISON - INFO - Evaluating Random_Forest...
+2026-01-05 21:58:16,093 - MODEL_COMPARISON - INFO - Random_Forest Average RMSE: 9.4541
+2026-01-05 21:58:16,093 - MODEL_COMPARISON - INFO - Evaluating XGBoost...
+2026-01-05 21:58:20,198 - MODEL_COMPARISON - INFO - XGBoost Average RMSE: 8.9953
+2026-01-05 21:58:20,198 - MODEL_COMPARISON - INFO - Evaluating LightGBM...
+2026-01-05 21:58:24,424 - MODEL_COMPARISON - INFO - LightGBM Average RMSE: 8.9989
+2026-01-05 21:58:24,424 - MODEL_COMPARISON - INFO - Evaluating CatBoost...
+2026-01-05 21:58:50,565 - MODEL_COMPARISON - INFO - CatBoost Average RMSE: 9.1461
+2026-01-05 21:58:50,565 - MODEL_COMPARISON - INFO - ========================================
+2026-01-05 21:58:50,565 - MODEL_COMPARISON - INFO -    MODEL COMPARISON RESULTS
+2026-01-05 21:58:50,565 - MODEL_COMPARISON - INFO - ========================================
+2026-01-05 21:58:50,565 - MODEL_COMPARISON - INFO - XGBoost: 8.9953
+2026-01-05 21:58:50,565 - MODEL_COMPARISON - INFO - LightGBM: 8.9989
+2026-01-05 21:58:50,565 - MODEL_COMPARISON - INFO - CatBoost: 9.1461
+2026-01-05 21:58:50,565 - MODEL_COMPARISON - INFO - Random_Forest: 9.4541
+2026-01-05 21:58:50,565 - MODEL_COMPARISON - INFO - Linear_Regression: 9.5090
+2026-01-05 21:58:50,565 - MODEL_COMPARISON - INFO - Ridge_Regression: 9.5090
+2026-01-05 21:58:50,565 - MODEL_COMPARISON - INFO - Lasso_Regression: 9.5109
+2026-01-05 21:58:50,565 - MODEL_COMPARISON - INFO - Best Model: XGBoost
+2026-01-05 21:58:50,565 - MODEL_COMPARISON - INFO - ========================================
+2026-01-05 21:58:50,565 - MODEL_COMPARISON - INFO -    RESIDUAL CORRELATION ANALYSIS
+2026-01-05 21:58:50,565 - MODEL_COMPARISON - INFO - ========================================
+2026-01-05 21:58:50,625 - MODEL_COMPARISON - INFO - 
+                   Linear_Regression  Ridge_Regression  Lasso_Regression  ...   XGBoost  LightGBM  CatBoost
+Linear_Regression           1.000000          1.000000          0.999804  ...  0.962237  0.964387  0.982188
+Ridge_Regression            1.000000          1.000000          0.999804  ...  0.962237  0.964387  0.982188
+Lasso_Regression            0.999804          0.999804          1.000000  ...  0.962078  0.964225  0.982005
+Random_Forest               0.976260          0.976260          0.976760  ...  0.967426  0.968589  0.980104
+XGBoost                     0.962237          0.962237          0.962078  ...  1.000000  0.996583  0.989391
+LightGBM                    0.964387          0.964387          0.964225  ...  0.996583  1.000000  0.991038
+CatBoost                    0.982188          0.982188          0.982005  ...  0.989391  0.991038  1.000000
+
+[7 rows x 7 columns]
+2026-01-05 21:58:50,812 - MODEL_COMPARISON - INFO - Residual correlation matrix saved to outputs/visualizations\residual_correlation_matrix.png
+2026-01-05 22:01:49,281 - MODEL_COMPARISON - INFO - Starting Model Comparison...
+2026-01-05 22:01:49,281 - MODEL_COMPARISON - INFO - Loading processed data from outputs/artifacts/processed_train.csv
+2026-01-05 22:01:49,681 - MODEL_COMPARISON - INFO - Experiment: Using hybrid features (Segments + Raw): ['sleep_segment_te', 'attendance_segment_te', 'study_method_te', 'study_hours', 'sleep_hours', 'class_attendance']
+2026-01-05 22:01:49,684 - MODEL_COMPARISON - INFO - Evaluating Linear_Regression...
+2026-01-05 22:01:49,937 - MODEL_COMPARISON - INFO - Linear_Regression Average RMSE: 9.0931
+2026-01-05 22:01:49,937 - MODEL_COMPARISON - INFO - Evaluating Ridge_Regression...
+2026-01-05 22:01:50,134 - MODEL_COMPARISON - INFO - Ridge_Regression Average RMSE: 9.0931
+2026-01-05 22:01:50,134 - MODEL_COMPARISON - INFO - Evaluating Lasso_Regression...
+2026-01-05 22:01:50,432 - MODEL_COMPARISON - INFO - Lasso_Regression Average RMSE: 9.0952
+2026-01-05 22:01:50,433 - MODEL_COMPARISON - INFO - Evaluating Random_Forest...
+2026-01-05 22:02:10,259 - MODEL_COMPARISON - INFO - Random_Forest Average RMSE: 9.0551
+2026-01-05 22:02:10,259 - MODEL_COMPARISON - INFO - Evaluating XGBoost...
+2026-01-05 22:02:15,095 - MODEL_COMPARISON - INFO - XGBoost Average RMSE: 8.7717
+2026-01-05 22:02:15,095 - MODEL_COMPARISON - INFO - Evaluating LightGBM...
+2026-01-05 22:02:19,863 - MODEL_COMPARISON - INFO - LightGBM Average RMSE: 8.7798
+2026-01-05 22:02:19,863 - MODEL_COMPARISON - INFO - Evaluating CatBoost...
+2026-01-05 22:02:46,183 - MODEL_COMPARISON - INFO - CatBoost Average RMSE: 8.8136
+2026-01-05 22:02:46,183 - MODEL_COMPARISON - INFO - ========================================
+2026-01-05 22:02:46,183 - MODEL_COMPARISON - INFO -    MODEL COMPARISON RESULTS
+2026-01-05 22:02:46,183 - MODEL_COMPARISON - INFO - ========================================
+2026-01-05 22:02:46,183 - MODEL_COMPARISON - INFO - XGBoost: 8.7717
+2026-01-05 22:02:46,183 - MODEL_COMPARISON - INFO - LightGBM: 8.7798
+2026-01-05 22:02:46,183 - MODEL_COMPARISON - INFO - CatBoost: 8.8136
+2026-01-05 22:02:46,183 - MODEL_COMPARISON - INFO - Random_Forest: 9.0551
+2026-01-05 22:02:46,183 - MODEL_COMPARISON - INFO - Ridge_Regression: 9.0931
+2026-01-05 22:02:46,183 - MODEL_COMPARISON - INFO - Linear_Regression: 9.0931
+2026-01-05 22:02:46,184 - MODEL_COMPARISON - INFO - Lasso_Regression: 9.0952
+2026-01-05 22:02:46,184 - MODEL_COMPARISON - INFO - Best Model: XGBoost
+2026-01-05 22:02:46,184 - MODEL_COMPARISON - INFO - ========================================
+2026-01-05 22:02:46,184 - MODEL_COMPARISON - INFO -    RESIDUAL CORRELATION ANALYSIS
+2026-01-05 22:02:46,184 - MODEL_COMPARISON - INFO - ========================================
+2026-01-05 22:02:46,246 - MODEL_COMPARISON - INFO - 
+                   Linear_Regression  Ridge_Regression  Lasso_Regression  ...   XGBoost  LightGBM  CatBoost
+Linear_Regression           1.000000          1.000000          0.999765  ...  0.965854  0.968124  0.974906
+Ridge_Regression            1.000000          1.000000          0.999765  ...  0.965854  0.968124  0.974906
+Lasso_Regression            0.999765          0.999765          1.000000  ...  0.965644  0.967922  0.974698
+Random_Forest               0.968619          0.968619          0.969521  ...  0.969531  0.970482  0.971133
+XGBoost                     0.965854          0.965854          0.965644  ...  1.000000  0.996373  0.994212
+LightGBM                    0.968124          0.968124          0.967922  ...  0.996373  1.000000  0.995762
+CatBoost                    0.974906          0.974906          0.974698  ...  0.994212  0.995762  1.000000
+
+[7 rows x 7 columns]
+2026-01-05 22:02:46,440 - MODEL_COMPARISON - INFO - Residual correlation matrix saved to outputs/visualizations\residual_correlation_matrix.png

@@ -50,3 +50,13 @@
 2026-01-05 20:20:13,705 - PREPROCESSING - INFO - Dropping 'id' column from train and test sets
 2026-01-05 20:20:15,220 - PREPROCESSING - INFO - Cleaned data saved to outputs/artifacts/train_cleaned.csv and outputs/artifacts/test_cleaned.csv
 2026-01-05 20:20:15,220 - PREPROCESSING - INFO - Data Preprocessing completed.
+2026-01-05 22:04:35,829 - PREPROCESSING - INFO - Starting Data Preprocessing...
+2026-01-05 22:04:36,228 - PREPROCESSING - INFO - Keeping study_hours, class_attendance, and sleep_hours as raw numerical values.
+2026-01-05 22:04:36,228 - PREPROCESSING - INFO - Dropping 'id' column from train and test sets
+2026-01-05 22:04:37,714 - PREPROCESSING - INFO - Cleaned data saved to outputs/artifacts/train_cleaned.csv and outputs/artifacts/test_cleaned.csv
+2026-01-05 22:04:37,715 - PREPROCESSING - INFO - Data Preprocessing completed.
+2026-01-05 23:04:03,830 - PREPROCESSING - INFO - Starting Data Preprocessing...
+2026-01-05 23:04:04,225 - PREPROCESSING - INFO - Keeping study_hours, class_attendance, and sleep_hours as raw numerical values.
+2026-01-05 23:04:04,225 - PREPROCESSING - INFO - Dropping 'id' column from train and test sets
+2026-01-05 23:04:05,728 - PREPROCESSING - INFO - Cleaned data saved to outputs/artifacts/train_cleaned.csv and outputs/artifacts/test_cleaned.csv
+2026-01-05 23:04:05,728 - PREPROCESSING - INFO - Data Preprocessing completed.
