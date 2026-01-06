@@ -1,0 +1,7 @@
+2026-01-05 19:20:44,365 - TRAINING - INFO - Starting Model Training...
+2026-01-05 19:20:44,366 - TRAINING - INFO - Loading processed data from outputs/artifacts/processed_data.csv
+2026-01-05 19:20:44,366 - TRAINING - INFO - Training model with target: exam_score
+2026-01-05 19:20:44,366 - TRAINING - INFO - Evaluating model (Placeholder)...
+2026-01-05 19:20:44,366 - TRAINING - INFO - Saving model artifact to outputs/artifacts/model.pkl
+2026-01-05 19:20:44,366 - TRAINING - INFO - Generating submission file at outputs/submissions/submission.csv
+2026-01-05 19:20:44,366 - TRAINING - INFO - Model Training completed.

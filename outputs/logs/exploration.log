@@ -1,0 +1,6 @@
+2026-01-05 19:20:44,361 - EXPLORATION - INFO - Starting Data Exploration...
+2026-01-05 19:20:44,361 - EXPLORATION - INFO - Loading train data from Data/train.csv
+2026-01-05 19:20:44,361 - EXPLORATION - INFO - Loading test data from Data/test.csv
+2026-01-05 19:20:44,361 - EXPLORATION - INFO - Generating visualizations (Placeholder)...
+2026-01-05 19:20:44,361 - EXPLORATION - INFO - Saving plots to outputs/visualizations
+2026-01-05 19:20:44,361 - EXPLORATION - INFO - Data Exploration completed.

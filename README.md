@@ -33,3 +33,28 @@ id,exam_score
 
 ## Citation
 Yao Yan, Walter Reade, Elizabeth Park. Predicting Student Test Scores. https://kaggle.com/competitions/playground-series-s6e1, 2025. Kaggle.
+
+## Project Structure
+
+This project is organized into a modular pipeline:
+
+- **src/exploration/**: Scripts for initial data analysis and visualization.
+- **src/processing/**: Scripts for data cleaning and preprocessing.
+- **src/features/**: Scripts for feature engineering.
+- **src/training/**: Scripts for model training and evaluation.
+- **src/pipeline.py**: Main orchestration script to run the entire pipeline.
+- **config.yaml**: Configuration file for paths and parameters.
+- **outputs/**: Directory for storing logs, artifacts, visualizations, and submissions.
+
+## Usage
+
+1.  **Configuration**: Modify `config.yaml` to set your data paths and parameters.
+2.  **Run Pipeline**: Execute the full pipeline using:
+    ```bash
+    python src/pipeline.py
+    ```
+    This will run exploration, preprocessing, feature engineering, and training in sequence.
+3.  **Individual Steps**: You can also run individual steps, e.g.:
+    ```bash
+    python src/exploration/explore.py
+    ```
