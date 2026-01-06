@@ -3,7 +3,7 @@
 ## Executive Summary
 This project is a high-performance machine learning system designed to predict students' exam scores based on various academic and lifestyle factors (e.g., study hours, attendance, sleep quality). By employing an iterative, data-driven approach, the system identifies the most influential predictors of success and selects the most accurate mathematical model to forecast outcomes.
 
-**Key Achievement:** Developed a predictive model with an average error of only **8.76 points**, outperforming standard linear approaches by effectively capturing complex, non-linear patterns in student behavior.
+**Key Achievement:** Developed a predictive model with an average error of only **8.73 points**, outperforming standard linear approaches by effectively capturing complex, non-linear patterns in student behavior.
 
 ---
 
